@@ -6,7 +6,7 @@
 #import "Restaurant.h"
 
 @implementation Restaurant
-@synthesize address, name, cuisineType;
+@synthesize address, name, cuisineType, chefName;
 
 - (id)init {
     self = [super init];
@@ -14,6 +14,7 @@
         name = @"Tabare";
         address = @"221 South 1st Street Brooklyn, NY 11211";
         cuisineType = @"Peruvian";
+        chefName = @"No Clue";
     }
     return self;
 }

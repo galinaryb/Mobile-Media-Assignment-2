@@ -10,7 +10,7 @@
 @synthesize addressLabel;
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
-
+@synthesize chefName;
 
 #pragma mark - View lifecycle
 
@@ -21,6 +21,7 @@
     cuisineLabel.text = [[[Restaurant alloc] init  ]cuisineType];
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
+    chefName.text = [restaurant chefName];
 }
 
 - (void)viewDidUnload
@@ -28,6 +29,8 @@
     [self setAddressLabel:nil];
     [self setNavigationHeader:nil];
     [self setCuisineLabel:nil];
+    [self setCuisineLabel:nil];
+    [self setChefName:nil];
     [super viewDidUnload];
 }
 
