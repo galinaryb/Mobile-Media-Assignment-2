@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     restaurant = [[Restaurant alloc] init];
-    
+    cuisineLabel.text = [[[Restaurant alloc] init  ]cuisineType];
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
 }
