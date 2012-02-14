@@ -11,6 +11,7 @@
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
 
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
