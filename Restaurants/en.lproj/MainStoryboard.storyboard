@@ -103,16 +103,32 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="year opened" lineBreakMode="tailTruncation" minimumFontSize="10" id="NNy-lK-VtK">
+                                <rect key="frame" x="134" y="243" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="age" lineBreakMode="tailTruncation" minimumFontSize="10" id="mh7-nK-z2V">
+                                <rect key="frame" x="160" y="272" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="26"/>
                     <connections>
                         <outlet property="addressLabel" destination="27" id="dDR-xF-TZ5"/>
+                        <outlet property="age" destination="mh7-nK-z2V" id="vGp-89-FSY"/>
                         <outlet property="chefName" destination="adq-IE-tI9" id="Aop-ti-Gfp"/>
                         <outlet property="cuisineLabel" destination="PbC-R4-mhe" id="ryE-hQ-YPa"/>
                         <outlet property="navigationHeader" destination="26" id="KJk-AP-LeQ"/>
                         <outlet property="phoneNumber" destination="aMh-fv-Za9" id="0ZF-1d-aS8"/>
+                        <outlet property="yearOpened" destination="NNy-lK-VtK" id="3DJ-qX-iMW"/>
                     </connections>
                 </viewController>
             </objects>

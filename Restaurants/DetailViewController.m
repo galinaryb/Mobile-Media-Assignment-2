@@ -12,6 +12,8 @@
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
 @synthesize chefName;
+@synthesize yearOpened;
+@synthesize age;
 
 #pragma mark - View lifecycle
 
@@ -24,6 +26,7 @@
     phoneNumber.text = [restaurant phoneNumber];
     navigationHeader.title = [restaurant name];
     chefName.text = [restaurant chefName];
+    age.text = [restaurant age];
 }
 
 - (void)viewDidUnload
@@ -34,6 +37,8 @@
     [self setCuisineLabel:nil];
     [self setChefName:nil];
     [self setPhoneNumber:nil];
+    [self setYearOpened:nil];
+    [self setAge:nil];
     [super viewDidUnload];
 }
 
