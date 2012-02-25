@@ -8,6 +8,7 @@
 
 @implementation DetailViewController
 @synthesize addressLabel;
+@synthesize phoneNumber;
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
 @synthesize chefName;
@@ -20,6 +21,7 @@
     restaurant = [[Restaurant alloc] init];
     cuisineLabel.text = [[[Restaurant alloc] init  ]cuisineType];
     addressLabel.text = [restaurant address];
+    phoneNumber.text = [restaurant phoneNumber];
     navigationHeader.title = [restaurant name];
     chefName.text = [restaurant chefName];
 }
@@ -31,6 +33,7 @@
     [self setCuisineLabel:nil];
     [self setCuisineLabel:nil];
     [self setChefName:nil];
+    [self setPhoneNumber:nil];
     [super viewDidUnload];
 }
 
