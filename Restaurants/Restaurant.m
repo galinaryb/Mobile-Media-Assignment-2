@@ -6,16 +6,9 @@
 #import "Restaurant.h"
 
 @implementation Restaurant
-@synthesize address, phoneNumber, name, cuisineType, chefName, age;
+@synthesize address, phoneNumber, name, cuisineType, chefName, yearOpened;
 
-- (int) age{
-    int answer;
-    int yearOpened = 2000;
-    int yearNow = 2012;
-    
-    answer = yearNow-yearOpened;
-    return answer;
-}
+
 
 - (id)init {
     self = [super init];
@@ -25,9 +18,14 @@
         phoneNumber = @"(347)335-0187";
         cuisineType = @"Peruvian";
         chefName = @"Chef: No Clue";
-        age = @"%i (%i years ago)", restaurant.yearOpened, [restaurant age]];
-           }
+        yearOpened = 2000;
+    }
     return self;
+}
+
+-(int) age
+{
+    return 2012-yearOpened;
 }
 
 @end
